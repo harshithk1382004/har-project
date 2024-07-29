@@ -7,7 +7,7 @@ def selection_sort(arr):
         arr[i], arr[min_idx] = arr[min_idx], arr[i]
     return arr
 
-# Example usage:
-arr = [64, 25, 12, 22, 11]
+user_input = input("Enter numbers separated by spaces: ")
+arr = list(map(int, user_input.split()))
 sorted_arr = selection_sort(arr)
 print("Sorted array is:", sorted_arr)
